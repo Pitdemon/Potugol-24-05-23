@@ -1,0 +1,40 @@
+programa {
+
+  inclua biblioteca Util --> u
+
+  funcao inicio() {
+    
+    inteiro numeroAleatorio, palpite = 0, contPalpite = 0
+    cadeia continua = "s"
+
+  enquanto(continua == "s" ou continua == "sim"){
+    //inicio do primeiro loop
+    numeroAleatorio = u.sorteia(1, 100)
+
+    //inicio do segundo loop
+      enquanto(numeroAleatorio != palpite){
+
+        contPalpite++
+        escreva("\nDigite seu palpite: ")
+        leia(palpite)
+        
+        se(numeroAleatorio == palpite){
+          escreva("\nParabéns você acertou! ")
+          escreva(" em ", contPalpite, " vez(es)")
+          escreva("Deseja continuar? \n(S)Sim \n(N)Não", "\n")
+          leia(continua)
+        }senao{
+          escreva("\nInfelizmente você errou!\n ")
+          se(palpite > numeroAleatorio){
+            escreva("O número é menor ainda...", "\n")
+          }senao{
+            escreva("O número é maior ainda...", "\n")
+          }
+        }
+
+      }//fim do enquanto interno
+
+    }//fim do enquanto principal
+
+  }
+}
