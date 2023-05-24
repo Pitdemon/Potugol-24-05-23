@@ -1,0 +1,32 @@
+programa {
+
+  inclua biblioteca Util --> u
+
+  funcao inicio() {
+    
+    inteiro numeroAleatorio, palpite = 0, contPalpite = 0
+
+    numeroAleatorio = u.sorteia(1, 100)
+
+    enquanto(numeroAleatorio != palpite){
+
+      contPalpite++
+      escreva("\nDigite seu palpite: ")
+      leia(palpite)
+      
+      se(numeroAleatorio == palpite){
+        escreva("\nParabéns você acertou! ")
+        escreva(" em ", contPalpite, " vez(es)")
+      }senao{
+        escreva("\nInfelizmente você errou!\n ")
+        se(palpite > numeroAleatorio){
+          escreva("O número é menor ainda...", "\n")
+        }senao{
+          escreva("O número é maior ainda...", "\n")
+        }
+      }
+
+    }//fim do enquanto 
+
+  }
+}
