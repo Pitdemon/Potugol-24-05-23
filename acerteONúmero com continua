@@ -10,6 +10,7 @@ programa {
   enquanto(continua == "s" ou continua == "sim"){
     //inicio do primeiro loop
     numeroAleatorio = u.sorteia(1, 100)
+    contPalpite = 0
 
     //inicio do segundo loop
       enquanto(numeroAleatorio != palpite){
