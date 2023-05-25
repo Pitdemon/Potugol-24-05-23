@@ -1,0 +1,15 @@
+/*sistema bancário
+Onde é preciso montar um menu para pegar do usúario uma das opções
+Escolha uma das opções:
+(1)Deposito -> Digite o valor do deposito | Saldo = saldo + deposito | 
+(2)Saque -> Validar se tem saldo / saldo insuficiênte | Saldo = saldo  - saque
+(3)Saldo -> 
+(4)Sair
+
+Obs.: Saldo = 0.*/
+
+programa {
+  funcao inicio() {
+    
+  }
+}
