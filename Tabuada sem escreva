@@ -1,0 +1,18 @@
+programa {
+  funcao inicio() {
+
+    inteiro numero = 1 , cont 
+    //7 x 1 = 7
+    
+    faca{
+      cont = 1
+      faca{
+      escreva("\n", numero, " x ", cont, " = ", (numero * cont))
+      cont++
+    } enquanto(cont <= 10)
+    escreva("\n")
+    numero++
+    } enquanto(numero <= 10)
+
+  }
+}
