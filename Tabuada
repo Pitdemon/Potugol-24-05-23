@@ -1,0 +1,17 @@
+programa {
+  funcao inicio() {
+
+    inteiro numero , cont = 1
+    //7 x 1 = 7
+    escreva("Digite um número de 1 a 10:")
+    leia(numero)
+
+    faca{
+      
+      escreva("\n", numero, " x ", cont, " = ", (numero * cont))
+      cont++
+    }enquanto(cont <= 10)
+
+
+  }
+}
